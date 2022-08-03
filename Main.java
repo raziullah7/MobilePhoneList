@@ -14,28 +14,16 @@ public class Main {
             int action = scanner.nextInt();
             scanner.nextLine();
             switch (action) {
-                case 0:
+                case 0 -> {
                     System.out.println("Shutting Down . . .");
                     quit = true;
-                    break;
-                case 1:
-                    mobilePhone.printContacts();
-                    break;
-                case 2:
-                    addNewContact();
-                    break;
-                case 3:
-                    updateContact();
-                    break;
-                case 4:
-                    removeContact();
-                    break;
-                case 5:
-                    queryContact();
-                    break;
-                case 6:
-                    printActions();
-                    break;
+                }
+                case 1 -> mobilePhone.printContacts();
+                case 2 -> addNewContact();
+                case 3 -> updateContact();
+                case 4 -> removeContact();
+                case 5 -> queryContact();
+                case 6 -> printActions();
             }
         }
     }
